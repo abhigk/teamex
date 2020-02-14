@@ -114,79 +114,92 @@ export default class TxCart extends React.Component {
       email: this.state.email
     };
 
-    fetch("https://api.teamex.in/api/users/generateOrder", {
-      method: "post",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json"
-      },
+    this.setState({
+      error: true,
+      variantType: "danger",
+      errorMessage:
+      "Payment network is under maintenance, Shopping will resume within a week"
+    });
+    setTimeout(
+              function () {
+                this.setState({ error: false });
+               
+              }.bind(this),
+              10000
+            );
+    // fetch("https://api.teamex.in/api/users/generateOrder", {
+    //   method: "post",
+    //   headers: {
+    //     Accept: "application/json",
+    //     "Content-Type": "application/json"
+    //   },
 
-      //make sure to serialize your JSON body
-      body: JSON.stringify(objPost)
-    })
-      .then(response => response.json())
-      .then(data => {
-        console.log(data, "data");
-        if (data.statusCode === 200 && this.state.paymentMethod === "COD") {
-          localStorage.setItem("orderDetails", JSON.stringify(data.data));
-          this.setState({
-            error: true,
-            variantType: "success",
-            errorMessage:
-              "Your order has been placed, redirecting you to order summary"
-          });
-          setTimeout(
-            function () {
-              this.setState({ error: false });
-              if (this.state.paymentMethod === "COD")
-                this.props.history.push("/orders");
-            }.bind(this),
-            5000
-          );
-        } else if (
-          data.statusCode === 200 &&
-          this.state.paymentMethod === "PAYTM"
-        ) {
-          localStorage.setItem("orderDetails", JSON.stringify(data.data));
+    //   //make sure to serialize your JSON body
+    //   body: JSON.stringify(objPost)
+    // })
+    //   .then(response => response.json())
+    //   .then(data => {
+    //     console.log(data, "data");
+    //     if (data.statusCode === 200 && this.state.paymentMethod === "COD") {
+    //       localStorage.setItem("orderDetails", JSON.stringify(data.data));
+    //       this.setState({
+    //         error: true,
+    //         variantType: "success",
+    //         errorMessage:
+    //           "Your order has been placed, redirecting you to order summary"
+    //       });
+    //       setTimeout(
+    //         function () {
+    //           this.setState({ error: false });
+    //           if (this.state.paymentMethod === "COD")
+    //             this.props.history.push("/orders");
+    //         }.bind(this),
+    //         5000
+    //       );
+    //     } else if (
+    //       data.statusCode === 200 &&
+    //       this.state.paymentMethod === "PAYTM"
+    //     ) {
+    //       localStorage.setItem("orderDetails", JSON.stringify(data.data));
+    //       // this.setState({
+    //       //   error: true,
+    //       //   variantType: "success",
+    //       //   errorMessage:
+    //       //     "Your details has been fetched successfully, redirecting to paytm gateway for payment"
+    //       // });
+    //       this.setState({
+    //         error: true,
+    //         variantType: "danger",
+    //         errorMessage:
+    //           "Payment network is under maintenance, Shopping will resume within a week"
+    //       });
+    //       setTimeout(
+    //         function () {
+    //           // window.location.href =
+    //           //   "https://paytm.teamex.in/paywithpaytm?amount=" + amt;
+    //           // // window.location.href = "https://paytm.teamex.in?amount=" + amt;
+
+    //           this.setState({ error: false });
+    //         }.bind(this),
+    //         10000
+    //       );
+    //     }
+    //     if (data.statusCode === 400) {
           // this.setState({
           //   error: true,
-          //   variantType: "success",
+          //   variantType: "danger",
           //   errorMessage:
-          //     "Your details has been fetched successfully, redirecting to paytm gateway for payment"
+          //   "Payment network is under maintenance, Shopping will resume within a week"
           // });
-          this.setState({
-            error: true,
-            variantType: "danger",
-            errorMessage:
-              "Payment network is under maintenance, Shopping will resume within a week"
-          });
-          setTimeout(
-            function () {
-              // window.location.href =
-              //   "https://paytm.teamex.in/paywithpaytm?amount=" + amt;
-              // // window.location.href = "https://paytm.teamex.in?amount=" + amt;
 
-              this.setState({ error: false });
-            }.bind(this),
-            10000
-          );
-        }
-        if (data.statusCode === 400) {
-          this.setState({
-            error: true,
-            variantType: "danger",
-            errorMessage:
-            "Payment network is under maintenance, Shopping will resume within a week"
-          });
-
-          setTimeout(
-            function () {
-              this.setState({ error: false });
-            }.bind(this),
-            5000
-          );
-        }
-      });
+    //       setTimeout(
+    //         function () {
+    //           this.setState({ error: false });
+    //         }.bind(this),
+    //         5000
+    //       );
+    //     }
+    //   });
   }
   render() {
     console.log(this.state.cartProducts, "item.totalPrice");
