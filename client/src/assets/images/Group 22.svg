@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="151px" height="51px" viewBox="0 0 151 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Group 22</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="141" height="41"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HOME" transform="translate(-165.000000, -533.000000)">
+            <g id="Group-22" transform="translate(165.000000, 533.000000)">
+                <g id="Group-21" transform="translate(10.000000, 10.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask"></g>
+                    <g id="Group-12" mask="url(#mask-2)" opacity="0.51046317" stroke="#5567DD" stroke-linecap="square">
+                        <g transform="translate(-54.810137, -66.810137)">
+                            <path d="M-23,59.5 L141.5,59.5" id="Line-6" transform="translate(59.500000, 59.500000) rotate(-45.000000) translate(-59.500000, -59.500000) "></path>
+                            <path d="M-18.7573593,63.7426407 L145.742641,63.7426407" id="Line-6-Copy" transform="translate(63.742641, 63.742641) rotate(-45.000000) translate(-63.742641, -63.742641) "></path>
+                            <path d="M-14.5147186,67.9852814 L149.985281,67.9852814" id="Line-6-Copy-2" transform="translate(67.985281, 67.985281) rotate(-45.000000) translate(-67.985281, -67.985281) "></path>
+                            <path d="M-10.2720779,72.2279221 L154.227922,72.2279221" id="Line-6-Copy-3" transform="translate(72.227922, 72.227922) rotate(-45.000000) translate(-72.227922, -72.227922) "></path>
+                            <path d="M-6.02943725,76.4705627 L158.470563,76.4705627" id="Line-6-Copy-4" transform="translate(76.470563, 76.470563) rotate(-45.000000) translate(-76.470563, -76.470563) "></path>
+                            <path d="M-1.78679656,80.7132034 L162.713203,80.7132034" id="Line-6-Copy-5" transform="translate(80.713203, 80.713203) rotate(-45.000000) translate(-80.713203, -80.713203) "></path>
+                            <path d="M2.45584412,84.9558441 L166.955844,84.9558441" id="Line-6-Copy-6" transform="translate(84.955844, 84.955844) rotate(-45.000000) translate(-84.955844, -84.955844) "></path>
+                            <path d="M6.69848481,89.1984848 L171.198485,89.1984848" id="Line-6-Copy-7" transform="translate(89.198485, 89.198485) rotate(-45.000000) translate(-89.198485, -89.198485) "></path>
+                            <path d="M31,72.5 L195.5,72.5" id="Line-6" transform="translate(113.500000, 72.500000) rotate(-45.000000) translate(-113.500000, -72.500000) "></path>
+                            <path d="M35.2426407,76.7426407 L199.742641,76.7426407" id="Line-6-Copy" transform="translate(117.742641, 76.742641) rotate(-45.000000) translate(-117.742641, -76.742641) "></path>
+                            <path d="M39.4852814,80.9852814 L203.985281,80.9852814" id="Line-6-Copy-2" transform="translate(121.985281, 80.985281) rotate(-45.000000) translate(-121.985281, -80.985281) "></path>
+                            <path d="M43.7279221,85.2279221 L208.227922,85.2279221" id="Line-6-Copy-3" transform="translate(126.227922, 85.227922) rotate(-45.000000) translate(-126.227922, -85.227922) "></path>
+                            <path d="M47.9705627,89.4705627 L212.470563,89.4705627" id="Line-6-Copy-4" transform="translate(130.470563, 89.470563) rotate(-45.000000) translate(-130.470563, -89.470563) "></path>
+                            <path d="M52.2132034,93.7132034 L216.713203,93.7132034" id="Line-6-Copy-5" transform="translate(134.713203, 93.713203) rotate(-45.000000) translate(-134.713203, -93.713203) "></path>
+                            <path d="M56.4558441,97.9558441 L220.955844,97.9558441" id="Line-6-Copy-6" transform="translate(138.955844, 97.955844) rotate(-45.000000) translate(-138.955844, -97.955844) "></path>
+                            <path d="M60.6984848,102.198485 L225.198485,102.198485" id="Line-6-Copy-7" transform="translate(143.198485, 102.198485) rotate(-45.000000) translate(-143.198485, -102.198485) "></path>
+                            <path d="M85,85.5 L249.5,85.5" id="Line-6" transform="translate(167.500000, 85.500000) rotate(-45.000000) translate(-167.500000, -85.500000) "></path>
+                            <path d="M89.2426407,89.7426407 L253.742641,89.7426407" id="Line-6-Copy" transform="translate(171.742641, 89.742641) rotate(-45.000000) translate(-171.742641, -89.742641) "></path>
+                            <path d="M93.4852814,93.9852814 L257.985281,93.9852814" id="Line-6-Copy-2" transform="translate(175.985281, 93.985281) rotate(-45.000000) translate(-175.985281, -93.985281) "></path>
+                            <path d="M97.7279221,98.2279221 L262.227922,98.2279221" id="Line-6-Copy-3" transform="translate(180.227922, 98.227922) rotate(-45.000000) translate(-180.227922, -98.227922) "></path>
+                            <path d="M101.970563,102.470563 L266.470563,102.470563" id="Line-6-Copy-4" transform="translate(184.470563, 102.470563) rotate(-45.000000) translate(-184.470563, -102.470563) "></path>
+                            <path d="M106.213203,106.713203 L270.713203,106.713203" id="Line-6-Copy-5" transform="translate(188.713203, 106.713203) rotate(-45.000000) translate(-188.713203, -106.713203) "></path>
+                            <path d="M110.455844,110.955844 L274.955844,110.955844" id="Line-6-Copy-6" transform="translate(192.955844, 110.955844) rotate(-45.000000) translate(-192.955844, -110.955844) "></path>
+                            <path d="M114.698485,115.198485 L279.198485,115.198485" id="Line-6-Copy-7" transform="translate(197.198485, 115.198485) rotate(-45.000000) translate(-197.198485, -115.198485) "></path>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-20">
+                    <rect id="Rectangle" fill="#687FE4" x="0" y="0" width="140" height="40"></rect>
+                    <text id="Contact-Us" font-family="SFProText-Bold, SF Pro Text" font-size="14" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="30.4394531" y="25">Contact Us</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

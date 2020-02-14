@@ -1,0 +1,56 @@
+{
+  "name": "teamex-dev",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.4.1",
+    "cors": "^2.8.5",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "google-maps-react": "^2.0.2",
+    "lodash": "^4.17.15",
+    "radium": "^0.25.2",
+    "react": "^16.8.6",
+    "react-alice-carousel": "^1.15.2",
+    "react-bootstrap": "^1.0.0-beta.10",
+    "react-coverflow": "^0.2.20",
+    "react-dom": "^16.8.6",
+    "react-froala-wysiwyg": "^3.1.0",
+    "react-items-carousel": "^2.3.7",
+    "react-owl-carousel": "^2.3.1",
+    "react-player": "^1.11.1",
+    "react-render-html": "^0.6.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.0.1",
+    "react-scroll": "^1.7.12",
+    "react-slick": "^0.25.2",
+    "reactstrap": "^8.2.0",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^4.4.1",
+    "webpack": "^4.29.6"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "deploy": "aws s3 sync build/ s3://teamex",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
