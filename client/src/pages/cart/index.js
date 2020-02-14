@@ -148,21 +148,27 @@ export default class TxCart extends React.Component {
           this.state.paymentMethod === "PAYTM"
         ) {
           localStorage.setItem("orderDetails", JSON.stringify(data.data));
+          // this.setState({
+          //   error: true,
+          //   variantType: "success",
+          //   errorMessage:
+          //     "Your details has been fetched successfully, redirecting to paytm gateway for payment"
+          // });
           this.setState({
             error: true,
-            variantType: "success",
+            variantType: "danger",
             errorMessage:
-              "Your details has been fetched successfully, redirecting to paytm gateway for payment"
+              "Payment network is under maintenance, Shopping will resume within a week"
           });
           setTimeout(
             function () {
-              window.location.href =
-                "https://paytm.teamex.in/paywithpaytm?amount=" + amt;
-              // window.location.href = "https://paytm.teamex.in?amount=" + amt;
+              // window.location.href =
+              //   "https://paytm.teamex.in/paywithpaytm?amount=" + amt;
+              // // window.location.href = "https://paytm.teamex.in?amount=" + amt;
 
               this.setState({ error: false });
             }.bind(this),
-            5000
+            10000
           );
         }
         if (data.statusCode === 400) {
@@ -170,7 +176,7 @@ export default class TxCart extends React.Component {
             error: true,
             variantType: "danger",
             errorMessage:
-              "Please fill up all the details below and then place your order"
+            "Payment network is under maintenance, Shopping will resume within a week"
           });
 
           setTimeout(
