@@ -147,39 +147,7 @@ export default class TxCart extends React.Component {
                       5000
                     );
           }
-    //         fetch("https://paytm.teamex.in/paywithpaytmapi", {
-    //   method: "post",
-    //   headers: {
-    //     Accept: "application/json",
-    //     "Content-Type": "application/json"
-    //   },
 
-    //   //make sure to serialize your JSON body
-    //   body: JSON.stringify(objPost)
-    // })
-    //   // .then(response => response.json())
-    //   .then(data => {
-        // console.log(data, "pay123");
-        // window.location.href = `${data.url}` + amt;
-
-        // if (data.statusCode === 200 && this.state.paymentMethod === "COD") {debugger
-          // localStorage.setItem("orderDetails", JSON.stringify(data.data));
-          // this.setState({
-          //   error: true,
-          //   variantType: "success",
-          //   errorMessage:
-          //     "Your order has been placed, redirecting you to order summary"
-          // });
-          // setTimeout(
-          //   function () {
-          //     this.setState({ error: false });
-          //     if (this.state.paymentMethod === "COD")
-          //       this.props.history.push("/orders");
-          //   }.bind(this),
-          //   5000
-          // );
-      //   }
-      // })
     // fetch("https://api.teamex.in/api/users/generateOrder", {
     //   method: "post",
     //   headers: {
