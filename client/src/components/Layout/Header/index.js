@@ -194,7 +194,7 @@ class TxNavbar extends React.Component {
                   Shop Products
                 </NavLink>
               </NavItem> */}
-              <NavItem>
+              {/* <NavItem>
                 <DropDownWrapper length={productCategory.length}>
                   <p className="heading">Shop Products</p>
                   <DropDownItemsWrapper>
@@ -210,7 +210,7 @@ class TxNavbar extends React.Component {
                     ))}
                   </DropDownItemsWrapper>
                 </DropDownWrapper>
-              </NavItem>
+              </NavItem> */}
 
               <NavItem>
                 <NavLink href="/video-gallery">Video Gallery</NavLink>
