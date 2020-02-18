@@ -2,6 +2,7 @@
   "name": "teamex-dev",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "axios": "^0.19.0",
     "body-parser": "^1.19.0",
