@@ -64,7 +64,6 @@ export default class TxCart extends React.Component {
     this.setState({});
   }
   subtractQuantity(item) {
-    debugger;
     if (item.quantity > 1) {
       let q = item.quantity;
       item.quantity = --q;
@@ -87,7 +86,6 @@ export default class TxCart extends React.Component {
   }
 
   onFormSubmit() {
-    debugger;
     console.log("submit");
     console.log("state: ", this.state);
 
@@ -106,27 +104,82 @@ export default class TxCart extends React.Component {
       flatNumber: this.state.flatNumber,
       state: this.state.state,
       address: this.state.address,
-      pinCode: this.state.pinCode,
       city: this.state.city,
       phoneNo: this.state.phoneNo,
       orderMethod: this.state.paymentMethod,
-      netAmount: `${1}`,
+      netAmount: `${amt}`,
       email: this.state.email
     };
-
+    if(this.state.cartProducts.length > 0) {
+    if(this.state.customerName === '' &&  this.state.flatNumber === '' &&  this.state.state === '' &&  this.state.address === '' &&  this.state.paymentMethod === '' &&  this.state.city === '' &&  this.state.email === '') {
     this.setState({
       error: true,
       variantType: "danger",
       errorMessage:
-      "Payment network is under maintenance, Shopping will resume within a week"
+      "Please fill all the fields before making payment."
     });
+    
     setTimeout(
               function () {
                 this.setState({ error: false });
                
               }.bind(this),
-              10000
+              5000
             );
+            }
+            else {
+              window.location.href =
+              `https://paytm.teamex.in/paywithpaytm?amount=${amt}&order=${JSON.stringify(objPost)}`;
+            }
+          } else {
+            this.setState({
+              error: true,
+              variantType: "error",
+              errorMessage:
+              "Please add product to your cart."
+            });
+            
+            setTimeout(
+                      function () {
+                        this.setState({ error: false });
+                       
+                      }.bind(this),
+                      5000
+                    );
+          }
+    //         fetch("https://paytm.teamex.in/paywithpaytmapi", {
+    //   method: "post",
+    //   headers: {
+    //     Accept: "application/json",
+    //     "Content-Type": "application/json"
+    //   },
+
+    //   //make sure to serialize your JSON body
+    //   body: JSON.stringify(objPost)
+    // })
+    //   // .then(response => response.json())
+    //   .then(data => {
+        // console.log(data, "pay123");
+        // window.location.href = `${data.url}` + amt;
+
+        // if (data.statusCode === 200 && this.state.paymentMethod === "COD") {debugger
+          // localStorage.setItem("orderDetails", JSON.stringify(data.data));
+          // this.setState({
+          //   error: true,
+          //   variantType: "success",
+          //   errorMessage:
+          //     "Your order has been placed, redirecting you to order summary"
+          // });
+          // setTimeout(
+          //   function () {
+          //     this.setState({ error: false });
+          //     if (this.state.paymentMethod === "COD")
+          //       this.props.history.push("/orders");
+          //   }.bind(this),
+          //   5000
+          // );
+      //   }
+      // })
     // fetch("https://api.teamex.in/api/users/generateOrder", {
     //   method: "post",
     //   headers: {
@@ -175,8 +228,8 @@ export default class TxCart extends React.Component {
     //       });
     //       setTimeout(
     //         function () {
-    //           // window.location.href =
-    //           //   "https://paytm.teamex.in/paywithpaytm?amount=" + amt;
+              // window.location.href =
+              //   "https://paytm.teamex.in/paywithpaytm?amount=" + amt;
     //           // // window.location.href = "https://paytm.teamex.in?amount=" + amt;
 
     //           this.setState({ error: false });
@@ -201,6 +254,7 @@ export default class TxCart extends React.Component {
     //     }
     //   });
   }
+  
   render() {
     console.log(this.state.cartProducts, "item.totalPrice");
     const itemBlock = {

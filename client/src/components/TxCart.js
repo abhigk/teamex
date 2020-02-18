@@ -60,7 +60,6 @@ export default class TxCart extends React.Component {
         this.setState({});
     };
     subtractQuantity(item) {
-        debugger;
         if (item.quantity > 1) {
             let q = item.quantity;
             item.quantity = --q;
@@ -84,7 +83,6 @@ export default class TxCart extends React.Component {
     }
 
     onFormSubmit() {
-        debugger;
         console.log('submit');
         console.log('state: ', this.state);
 

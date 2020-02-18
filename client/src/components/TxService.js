@@ -98,7 +98,6 @@ class TxService extends React.Component {
     }
 
     onProceed() {
-        debugger
         console.log(this.state.categoryName)
         this.props.history.push('/product-list', { category: this.state.categoryName })
         // e.preventDefault();
